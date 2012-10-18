@@ -1,6 +1,15 @@
+
+" Start pathgen plugin 
+runtime bundle/pathogen/autoload/pathogen.vim
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
+
 set nocp
 filetype plugin on
 filetype on
+
+
 
 "Syntax Highlighting is a must
 syntax on
