@@ -28,7 +28,7 @@ set tags+=/home/tito/Projects/libssh2/src/
 set tags+=/home/tito/Projects/libssh2/example
 set tags+=/home/tito/Projects/libssh2/include
 
-se spell
+set spell
 setlocal spell spelllang+=en_us
 "setlocal spell spelllang+=ru_ru
 "setlocal spell spelllang+=bg
