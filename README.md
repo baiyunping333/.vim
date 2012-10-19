@@ -17,5 +17,7 @@ it submodule add http://github.com/tpope/vim-fugitive.git bundle/fugitive
 git add .
 git commit -m "Install Fugitive.vim bundle as a submodule."
 
-#make Snimate to play along with super tab
-snipMate/snippets/c.snippets
+#make Snimate to play along with super tab   in file snipMate/snippets/c.snippets comment the following
+
+# snippet .
+#     [${1}]${2} 
