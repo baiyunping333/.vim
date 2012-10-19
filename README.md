@@ -1,3 +1,6 @@
+#create symbolic link
+ln -s ~/.vim/.vimrc ~/.vimrc
+
 
 #In order to update all submodules after the repository been copied do the following:
 git submodule init
