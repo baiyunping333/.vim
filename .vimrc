@@ -1,4 +1,3 @@
-
 " Start pathgen plugin 
 runtime bundle/pathogen/autoload/pathogen.vim
 call pathogen#runtime_append_all_bundles()
@@ -35,6 +34,18 @@ setlocal spell spelllang+=en_us
 "setlocal spell spelllang+=de
 
 
+" Complete options (disable preview scratch window)
+set completeopt = menu,menuone,longest
+ " Limit popup menu height
+set pumheight = 15
+ 
+ " SuperTab option for context aware completion
+let g:SuperTabDefaultCompletionType = "context"
+ 
+ " Disable auto popup, use <Tab> to autocomplete
+let g:clang_complete_auto = 0
+ " Show clang errors in the quickfix window
+let g:clang_complete_copen = 1
 
 
 
@@ -52,7 +63,7 @@ map <C-F12> :!ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 "let OmniCpp_MayCompleteScope = 1 " autocomplete after ::
 "let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
 " automatically open and close the popup menu / preview window
-au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
-set completeopt=menuone,menu,longest,preview
+" au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
+" set completeopt=menuone,menu,longest,preview
    
 
