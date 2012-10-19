@@ -16,3 +16,6 @@
 [submodule "bundle/figitive"]
 	path = bundle/figitive
 	url = git://github.com/tpope/vim-fugitive.git
+[submodule "bundle/snipMate"]
+	path = bundle/snipMate
+	url = git://github.com/msanders/snipmate.vim.git
