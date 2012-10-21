@@ -10,6 +10,25 @@ filetype on
 
 
 
+
+" ################# Intending The Code #####################################
+
+set noexpandtab                         " use tabs, not spaces
+set tabstop=8                           " tabstops of 8
+set shiftwidth=8                        " indents of 8
+set textwidth=78                        " screen in 80 columns wide, wrap at 78
+
+set autoindent smartindent              " turn on auto/smart indenting
+set smarttab                            " make <tab> and <backspace> smarter
+set backspace=eol,start,indent          " allow backspacing over indent, eol, & start
+
+"Vim has a feature which makes it indent code differently based on file type; here is how you would enable it:
+filetype plugin indent on
+
+" forces (re)indentation of a block of code
+nmap <C-J> vip=                        
+
+
 "Syntax Highlighting is a must
 syntax on
 
@@ -35,9 +54,9 @@ setlocal spell spelllang+=en_us
 
 
 " Complete options (disable preview scratch window)
-set completeopt = menu,menuone,longest
- " Limit popup menu height
-set pumheight = 15
+"set completeopt = menu,menuone,longest
+" Limit popup menu height
+"set pumheight = 15
  
  " SuperTab option for context aware completion
 let g:SuperTabDefaultCompletionType = "context"
@@ -49,10 +68,9 @@ let g:clang_complete_copen = 1
 
 
 
-
 " build tags of your own project with Ctrl-F12
 map <C-F12> :!ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
-
+map <F10> :execute 'NERDTreeToggle' . getcwd()<CR>
 " OmniCppComplete
 "let OmniCpp_NamespaceSearch = 1
 "let OmniCpp_GlobalScopeSearch = 1
