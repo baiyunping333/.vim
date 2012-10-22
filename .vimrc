@@ -68,9 +68,25 @@ let g:clang_complete_copen = 1
 
 
 
+"Taglist options
+let Tlist_Ctags_Cmd = "/usr/bin/ctags"
+let Tlist_WinWidth = 50
+
+
+
 " build tags of your own project with Ctrl-F12
 map <C-F12> :!ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 map <F10> :execute 'NERDTreeToggle' . getcwd()<CR>
+map <F4> does not work for some reason <CR>
+"map <F5>  <CR>
+"map <F6>  <CR>
+map <F7> :TlistToggle <CR>
+map <F8> :!/usr/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+
+
+
+
+
 " OmniCppComplete
 "let OmniCpp_NamespaceSearch = 1
 "let OmniCpp_GlobalScopeSearch = 1
