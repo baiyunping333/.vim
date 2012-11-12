@@ -13,8 +13,8 @@
 [submodule "bundle/supertab"]
 	path = bundle/supertab
 	url = git://github.com/ervandew/supertab.git
-[submodule "bundle/figitive"]
-	path = bundle/figitive
+[submodule "bundle/fugitive"]
+	path = bundle/fugitive
 	url = git://github.com/tpope/vim-fugitive.git
 [submodule "bundle/snipMate"]
 	path = bundle/snipMate

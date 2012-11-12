@@ -9,7 +9,9 @@ filetype plugin on
 filetype on
 
 
+" ################# Search as you type ####################################
 
+set incsearch
 
 " ################# Intending The Code #####################################
 
@@ -34,6 +36,7 @@ syntax on
 
 " configure tags - add additional tags here or comment out not-used ones
 set tags+=~/.vim/tags/cpp
+set tags+=~/Projects/syncbird
 " set tags+=~/.vim/tags/gl
 " set tags+=~/.vim/tags/sdl
 " set tags+=~/.vim/tags/qt4
@@ -62,11 +65,11 @@ setlocal spell spelllang+=en_us
 let g:SuperTabDefaultCompletionType = "context"
  
  " Disable auto popup, use <Tab> to autocomplete
-let g:clang_complete_auto = 0
+" let g:clang_complete_auto = 0
  " Show clang errors in the quickfix window
 let g:clang_complete_copen = 1
 
-
+set ofu=syntaxcomplete#Complete
 
 "Taglist options
 let Tlist_Ctags_Cmd = "/usr/bin/ctags"
