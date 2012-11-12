@@ -13,7 +13,7 @@ git submodule foreach git pull origin master
 
 
 #If i do want to add new plugins as a submodule use
-it submodule add http://github.com/tpope/vim-fugitive.git bundle/fugitive
+git submodule add http://github.com/tpope/vim-fugitive.git bundle/fugitive
 git add .
 git commit -m "Install Fugitive.vim bundle as a submodule."
 
