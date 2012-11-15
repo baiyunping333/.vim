@@ -35,8 +35,12 @@ nmap <C-J> vip=
 syntax on
 
 " configure tags - add additional tags here or comment out not-used ones
-set tags+=~/.vim/tags/cpp
+set tags+=~/.vim/tags/boost
+set tags+=~/.vim/tags/libc6
+set tags+=~/.vim/tags/stdlibcpp
+
 set tags+=~/Projects/syncbird
+
 " set tags+=~/.vim/tags/gl
 " set tags+=~/.vim/tags/sdl
 " set tags+=~/.vim/tags/qt4
@@ -48,6 +52,7 @@ set path+=/home/tito/Projects/libssh2/include
 set tags+=/home/tito/Projects/libssh2/src/
 set tags+=/home/tito/Projects/libssh2/example
 set tags+=/home/tito/Projects/libssh2/include
+
 
 set spell
 setlocal spell spelllang+=en_us
