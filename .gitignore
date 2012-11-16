@@ -1,3 +1,10 @@
+
+#Ignore the bundle direcotry which is including all of the plugins as
+as git submoduiles
+
+bundle/**/*
+
+
 boost
 boost-filelist
 libc6
