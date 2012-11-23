@@ -1,4 +1,4 @@
-ttribute__
+__attribute__
 __attribute_deprecated__
 __attribute_format_arg__
 __attribute_format_strfmon__
@@ -10,4 +10,3 @@ __attribute_warn_unused_result__
 __wur
 __THROW
 __nonnull+
-

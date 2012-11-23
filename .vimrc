@@ -35,11 +35,17 @@ nmap <C-J> vip=
 syntax on
 
 " configure tags - add additional tags here or comment out not-used ones
+
+set tags=./tags,tags,../tags,../../tags,../../../tags,../../../../tags,/usr/include/tags
+set tags+=~/Projects/syncbird
+set tags+=~/Projects/syncbird/libssh2
+
 set tags+=~/.vim/tags/boost
 set tags+=~/.vim/tags/libc6
 set tags+=~/.vim/tags/stdlibcpp
+set tags+=~/Projects/thundebird/tags
 
-set tags+=~/Projects/syncbird
+
 
 " set tags+=~/.vim/tags/gl
 " set tags+=~/.vim/tags/sdl
